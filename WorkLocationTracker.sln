@@ -1,0 +1,38 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLocationTracker.Core", "src\WorkLocationTracker.Core\WorkLocationTracker.Core.csproj", "{67354AA2-23C6-4124-A4F0-5CDE1C62B88A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLocationTracker.Service", "src\WorkLocationTracker.Service\WorkLocationTracker.Service.csproj", "{1C22234E-45EC-4EB0-841D-D8994A21E531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLocationTracker.Monitor", "src\WorkLocationTracker.Monitor\WorkLocationTracker.Monitor.csproj", "{7E72ECAD-DC50-49F2-B028-0CA0DA48C95C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkLocationTracker.Tests", "tests\WorkLocationTracker.Tests\WorkLocationTracker.Tests.csproj", "{C08DEB77-A50F-430A-9591-6FB31D839D9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67354AA2-23C6-4124-A4F0-5CDE1C62B88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67354AA2-23C6-4124-A4F0-5CDE1C62B88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67354AA2-23C6-4124-A4F0-5CDE1C62B88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67354AA2-23C6-4124-A4F0-5CDE1C62B88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C22234E-45EC-4EB0-841D-D8994A21E531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C22234E-45EC-4EB0-841D-D8994A21E531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C22234E-45EC-4EB0-841D-D8994A21E531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C22234E-45EC-4EB0-841D-D8994A21E531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E72ECAD-DC50-49F2-B028-0CA0DA48C95C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E72ECAD-DC50-49F2-B028-0CA0DA48C95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E72ECAD-DC50-49F2-B028-0CA0DA48C95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E72ECAD-DC50-49F2-B028-0CA0DA48C95C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C08DEB77-A50F-430A-9591-6FB31D839D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08DEB77-A50F-430A-9591-6FB31D839D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08DEB77-A50F-430A-9591-6FB31D839D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08DEB77-A50F-430A-9591-6FB31D839D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
+

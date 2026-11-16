@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseAppHost>true</UseAppHost>
+    <ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+    <AssemblyName>WorkLocationTracker.Monitor</AssemblyName>
+    <RootNamespace>WorkLocationTracker.Monitor</RootNamespace>
+    <Version>1.24.0</Version>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WorkLocationTracker.Core\WorkLocationTracker.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\AppIcon.ico" />
+  </ItemGroup>
+
+  <Target Name="CopyAppIconToOutput" AfterTargets="Build">
+    <Copy SourceFiles="Assets\AppIcon.ico"
+          DestinationFolder="$(OutDir)Assets" />
+  </Target>
+
+  <Target Name="CopyAppIconToPublish" AfterTargets="Publish">
+    <Copy SourceFiles="Assets\AppIcon.ico"
+          DestinationFolder="$(PublishDir)Assets" />
+  </Target>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>WorkLocationTracker.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+</Project>

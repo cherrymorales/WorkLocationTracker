@@ -1,0 +1,19 @@
+<Project Sdk="WixToolset.Sdk/5.0.2">
+  <PropertyGroup>
+    <Platform>x64</Platform>
+    <Cultures>en-US</Cultures>
+    <ProductVersion Condition="'$(ProductVersion)' == ''">1.24.0</ProductVersion>
+    <ServicePublishDir Condition="'$(ServicePublishDir)' == ''">$(MSBuildThisFileDirectory)..\artifacts\installer-publish\Service</ServicePublishDir>
+    <MonitorPublishDir Condition="'$(MonitorPublishDir)' == ''">$(MSBuildThisFileDirectory)..\artifacts\installer-publish\Monitor</MonitorPublishDir>
+    <DefineConstants>ProductVersion=$(ProductVersion);ServicePublishDir=$(ServicePublishDir);MonitorPublishDir=$(MonitorPublishDir)</DefineConstants>
+    <OutputName>WorkLocationTracker-$(ProductVersion)-win-x64</OutputName>
+    <OutputPath>$(MSBuildThisFileDirectory)..\artifacts\installer\</OutputPath>
+    <!-- SQLite's native DLL is versioned but intentionally has no language resource. -->
+    <SuppressSpecificWarnings>1101</SuppressSpecificWarnings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WixToolset.Util.wixext" Version="5.0.2" />
+    <PackageReference Include="WixToolset.UI.wixext" Version="5.0.2" />
+  </ItemGroup>
+</Project>
